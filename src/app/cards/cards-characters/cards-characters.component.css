@@ -1,8 +1,9 @@
 .card-container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  justify-content: center;
+  justify-items: center;
+  margin-top: 4vh;
 }
 
 .card {
@@ -10,11 +11,12 @@
   border-radius: 8px;
   overflow: hidden;
   text-align: center;
-  width: 200px;
+  width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  margin-top: 4vh;
 }
 
 .card-image {
