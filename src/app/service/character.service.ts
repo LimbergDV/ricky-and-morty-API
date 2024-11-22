@@ -11,7 +11,7 @@ export class CharacterService {
 
   constructor(private _http: HttpClient) { }
 
-  getAllCharacters():Observable<Character[]>{
-    return this._http.get<Character[]>(`${this._apiUrl}/character`);
+  getAllCharacters():Observable<any>{
+    return this._http.get<any>(`${this._apiUrl}/character`);
   }
 }
