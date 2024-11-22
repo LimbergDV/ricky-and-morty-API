@@ -9,14 +9,16 @@ import { CardsModule } from './cards/cards.module';
 import { HomeModule } from './home/home.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    CardsModule,
+    HomeModule,
+    AppRoutingModule,
+    RouterOutlet,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
